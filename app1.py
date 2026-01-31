@@ -260,7 +260,7 @@ with col2:
                 ))
 
                 fig.update_layout(
-                    polar=dict(radialaxis=dict(visible=True, range=[0, 1])),
+                    polar=dict(radialaxis=dict(visible=True, range=[0, 2])),
                     title="Process Health Radar",
                     height=420,
                     showlegend=True,
