@@ -21,3 +21,8 @@ The system integrates:
 -Visualize fermentation process health and product distribution
 
 -Deploy the model as an accessible web application
+
+⚠️ Disclaimer
+
+This tool is intended for educational and research purposes.
+Predictions are based on historical and simulated data and should not replace industrial-scale process validation.
