@@ -2,6 +2,8 @@ Project Overview
 
 This project focuses on predicting bioethanol yield (g/L) from lignocellulosic biomass using machine learning and presenting the results through a professional, interactive web dashboard.
 
+https://bioethanol-yield-predictor.streamlit.app/
+
 The system integrates:
 
 -A trained regression model for ethanol yield prediction
