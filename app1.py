@@ -240,13 +240,13 @@ with col2:
             def process_radar(input_df):
                     # Normalize values (0–1 scale) based on realistic industrial ranges
                 radar_data = {
-                    "Temperature": min(input_df["Temperature_C"].iloc[0] / 40, 1),
-                    "pH": min(input_df["pH"].iloc[0] / 5, 1),
-                    "Sugar": min(input_df["Total_Sugar_gL"].iloc[0] / 168, 1),
-                    "Enzyme": min(input_df["Enzyme_gL"].iloc[0] / 5.65, 1),
-                    "Time": min(input_df["Fermentation_hours"].iloc[0] / 40, 1),
-                    "Efficiency": min(input_df["Process_Efficiency"].iloc[0] / 1, 1),
-                    "Agitation_RPM":min(input_df['Agitation_rpm'].iloc[0]/159,1)
+                    "Temperature": (input_df["Temperature_C"].iloc[0] / 40, 1),
+                    "pH": (input_df["pH"].iloc[0] / 5, 1),
+                    "Sugar": (input_df["Total_Sugar_gL"].iloc[0] / 168, 1),
+                    "Enzyme": (input_df["Enzyme_gL"].iloc[0] / 5.65, 1),
+                    "Time": (input_df["Fermentation_hours"].iloc[0] / 40, 1),
+                    "Efficiency": (input_df["Process_Efficiency"].iloc[0] / 1, 1),
+                    "Agitation_RPM":(input_df['Agitation_rpm'].iloc[0]/159,1)
                 }
 
                 fig = go.Figure()
